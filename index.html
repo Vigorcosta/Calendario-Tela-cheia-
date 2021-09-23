@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Vanilla JS Calendar</title>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="custom/vanillaCalendar.css" rel="stylesheet">
+	<link href="custom/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="v-cal">
+<div class="vcal-header 
+			bg-primary 
+			bg-gradient">
+<!--Anterior-->
+<button class="vcal-btn 
+			   btn btn-light" 
+		data-calendar-toggle="previous"> 
+
+Anterior <!--Anterior--> 
+</button>
+
+<!--Meses-->
+<div class="vcal-header__label" 
+	 data-calendar-label="month">
+</div>
+
+<!--Posterior-->
+<button class="vcal-btn 
+			   btn 
+			   btn-light" 
+		data-calendar-toggle="next"> 
+
+Avançar  <!--Avançar--> 
+</button>
+</div>
+			
+<div class="vcal-week bg-black bg-gradient text-light" >
+
+<span>DOM</span>
+<span>SEG</span>
+<span>TER</span>
+<span>QUA</span>
+<span>QUI</span>
+<span>SEX</span>
+<span>SAB</span>
+
+</div>
+
+<div class="vcal-body" data-calendar-area="month"></div>
+
+
+
+	</div>
+	<script src="custom/vanillaCalendar.js" type="text/javascript"></script>
+	<script>
+		window.addEventListener('load', function () {
+			vanillaCalendar.init({
+				disablePastDays: true
+			});
+		})
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+#v-cal *,
+#v-cal :after,
+#v-cal :before{
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box}
+
+#v-cal{	margin:0 auto;	width:100%}
+
+#v-cal .vcal-btn{font-size: 16px;
+		color:white;
+		background-color: #0d6efd;
+		}
+#v-cal .vcal-btn:hover{
+		background-color: white; 
+		color: #0d6efd;}
+
+
+#v-cal .vcal-header{
+		-webkit-box-align:center;
+		-ms-flex-align:center;
+		align-items:center;
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		padding:19.2px 22.4px;
+		padding:1.2rem 1.4rem}
+
+#v-cal .vcal-header__label{
+		color:white;
+		font-size: 30px;
+		text-align:center;
+		width:100%}
+
+#v-cal .vcal-week{
+		background-color:white;
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap}
+
+#v-cal .vcal-week span{
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		-webkit-box-flex:0;
+		-ms-flex:0 0 14.28%;
+		flex:0 0 14.28%;
+		font-size:20px;
+		
+		max-width:14.28%;
+		padding:19.2px 22.4px;
+		padding:1.2rem 1.4rem;
+		text-align:center;
+		text-transform:uppercase}
+
+#v-cal .vcal-body{
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap}
+
+#v-cal .vcal-body,
+#v-cal .vcal-date{
+		display:-webkit-box;
+		display:-ms-flexbox;
+		display:flex}
+
+#v-cal .vcal-date{
+		-webkit-box-align:center;
+		-ms-flex-align:center;
+		align-items:center;
+		border-radius:0;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		-webkit-box-flex:0;
+		-ms-flex:0 0 14.28%;
+		flex:0 0 14.28%;
+		max-width:14.28%;
+		padding:19.2px 0;
+		padding:1.2rem 0}
+
+#v-cal .vcal-date--active{cursor: pointer;}
+
+#v-cal .vcal-date--today{
+		background-color:#0d6efd;
+		color:white}
+
+#v-cal .vcal-date--selected{
+		background-color:#e7e9ed;
+		color:#333}
+
+#v-cal .vcal-date--disabled{
+		border-radius:0;
+		cursor:not-allowed;
+		opacity:.5}
+
